@@ -74,8 +74,3 @@ function calcularTabuada() {
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) (se você criar um) para mais detalhes.
 
------
-
-Este README é um bom ponto de partida. Você pode preencher o `[LINK DO SEU REPOSITÓRIO]` e adicionar informações sobre você na seção de "Autor" se desejar.
-
-Você gostaria de criar uma **seção de "Autor"** para incluir seus contatos ou um **arquivo `LICENSE.md`**?
