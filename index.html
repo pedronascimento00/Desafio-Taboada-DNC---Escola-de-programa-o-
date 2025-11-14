@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Tabuada</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="dnc_icon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <img src="./img/dnc.png" alt="Logo DNC" class="logo">
+        <h1>Taboada</h1>
+    </header>
+
+    <main class="container">
+        <div class="calculator-box">
+            <p>Qual taboada você deseja saber a taboada?</p>
+            <input type="number" id="multiplicando" placeholder="Ex: 5" min="1">
+
+            <p>Até que número você quer?</p>
+            <input type="number" id="multiplicadorMax" placeholder="Ex: 10" min="1">
+
+            <button onclick="calcularTabuada()">Calcular</button>
+
+            <p id="feedback">Preencha os valores acima.</p>
+        </div>
+
+        <div id="resultado">
+            </div>
+    </main>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

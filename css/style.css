@@ -1,0 +1,121 @@
+/* Variáveis de Cores */
+:root {
+    --bg-color: #333333; /* Fundo Cinza Escuro */
+    --box-color: #e0e0e0; /* Fundo da Caixa de Cálculo (Claro) */
+    --text-color: #ffffff; /* Texto Claro */
+    --input-bg: #ffffff; /* Fundo do Input */
+    --button-bg: #d9d9d9; /* Fundo do Botão */
+    --button-hover: #cccccc;
+    --header-color: #f0f0f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* --- Cabeçalho --- */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 30px; /* Ajuste conforme a imagem real */
+    height: 30px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: var(--header-color);
+}
+
+/* --- Container Principal --- */
+.container {
+    width: 90%;
+    max-width: 500px;
+}
+
+.calculator-box {
+    background-color: var(--box-color);
+    color: #333; /* Texto escuro dentro da caixa clara */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calculator-box p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* --- Inputs --- */
+input[type="number"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* --- Botão --- */
+button {
+    background-color: var(--button-bg);
+    color: #555;
+    padding: 8px 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+#feedback {
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* --- Área de Resultado --- */
+#resultado {
+    background-color: var(--box-color);
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    white-space: pre-wrap; /* Mantém as quebras de linha do JavaScript */
+    text-align: left;
+    font-size: 1.1em;
+}
+
+/* Estilo para a tabuada exibida */
+#resultado strong {
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 10px;
+}
